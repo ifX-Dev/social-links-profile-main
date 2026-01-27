@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+:root {
+  --font-main: "Inter", sans-serif;
+  --font-size-md: 14px;
+  --font-size-lg: 24px;
+  --color-green: hsl(75, 94%, 57%);
+  --color-grey-700: hsl(0, 0%, 20%);
+  --color-grey-800: hsl(0, 0%, 12%);
+  --color-grey-900: hsl(0, 0%, 8%);
+}
+
+@layer utilities {
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .col-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .inter-md {
+    font-family: var(--font-main);
+    font-size: var(--font-size-md);
+    color: white;
+    font-weight: 300;
+  }
+
+  .inter-md-bold {
+    font-family: var(--font-main);
+    font-size: var(--font-size-md);
+    color: white;
+    font-weight: 600;
+  }
+
+  .inter-lg {
+    font-family: var(--font-main);
+    font-size: var(--font-size-lg);
+    color: white;
+    font-weight: 700;
+  }
+}
+
+@layer components {
+  .lnk-btn {
+    padding: 16px 0px;
+    width: 100%;
+    background-color: var(--color-grey-700);
+    border-radius: 12px;
+    text-align: center;
+    font-family: var(--font-main);
+    font-size: var(--font-size-md);
+    color: white;
+    font-weight: 600;
+  }
+
+  .lnk-btn:hover {
+    color: var(--color-grey-700);
+    background-color: var(--color-green);
+  }
+}
+
+@theme {
+  --breakpoint-md: 500px;
+}
