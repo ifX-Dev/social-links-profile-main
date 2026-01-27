@@ -4,7 +4,7 @@ import avatar from "./assets/avatar-jessica.jpeg";
 function App() {
   return (
     <>
-      <div className="bg-zinc-900 rounded-3xl max-[500px]:w-[100%] max-[500px]:mx-[20px] w-md h-[740px] max-[500px]:p-10 p-16 col-between">
+      <div className="bg-zinc-900 rounded-3xl max-[500px]:w-[100%] max-[500px]:mx-[20px] w-md max-[500px]:h-[740px] h-[784px] max-[500px]:p-10 p-16 col-between">
         <img src={avatar} alt="" className="w-[128px] rounded-[200px]" />
         <div className="col-between">
           <h1 className="inter-lg mb-1">Jessica Randall</h1>
